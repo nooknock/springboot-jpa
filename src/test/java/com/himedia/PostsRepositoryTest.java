@@ -29,7 +29,7 @@ public class PostsRepositoryTest {
         String title="테스트 게시글";
         String content="테스트 본문";
 
-        //테이블 posts에 insert/update 쿼리를 실행, id값이 있으면 update가, 없다면 insert 쿼리 실행
+        //테이블 posts에 insert/update 쿼리를 실행, id값이 있으면 update가, 없다면 insert 쿼리 실행 ㅇ
         postsRepository.save(Posts.builder().title(title).content(content).author("hong@gmail.com").build());
 
         //when
